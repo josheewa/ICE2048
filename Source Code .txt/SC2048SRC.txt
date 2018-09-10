@@ -1,0 +1,73 @@
+[i]ICE2048
+Begin
+FillScreen(255
+20->X
+30->Y
+Lbl SPRITES
+AsmComp(I2048SPR)
+
+
+Lbl WELCOME
+
+
+SetTextScale(2,2
+PrintStringXY("W[|e]l[|c]om[|e] [t]o ICE2048!",30,100
+SetTextScale(1,1
+PrintStringXY("E[n]joy yo|ur [s][t][|a]y h[|e]r[|e]...",35,140
+
+PrintStringXY("Press [enter] to continue...",50,210
+
+Pause 
+FillScreen(255
+
+Lbl TEXT
+PrintStringXY("ICE2048 [|b]y j[|c]g[t][|e]r777",9,2
+
+Lbl GRID
+SetColor(0
+Rectangle(9,19,212,212
+SetColor(214
+FillRectangle(10,20,210,210
+[i]I[n][|d]i|vi[|d]|u[|a]l [|b]lo[|c]k[s] [|b][|e]lo|w
+SetColor(182
+For(A,20,170,50
+For(B,30,180,50
+FillRectangle(A,B,41,41
+End
+End
+[i]Bor[|d][|e]r[s] for i[n][|d]i|vi[|d]|u[|a]l [|b]lo[|c]k[s]
+SetColor(0
+For(C,19,169,50
+For(D,29,179,50
+Rectangle(C,D,41,41
+End
+End
+
+
+Lbl TILES
+[i]Sprite(TWO,X,Y
+
+
+
+Lbl MOVE
+SetColor(182
+Repeat getKey=15 or getKey=9
+	Sprite(TWO,X,Y
+	If getKey=3 and X!=170
+		FillRectangle(X,Y,39,39
+		X+50->X
+	End
+	If getKey=2 and X!=20
+		FillRectangle(X,Y,39,39
+		X-50->X
+	End
+	If getKey=4 and Y!=30
+		FillRectangle(X,Y,39,39
+		Y-50->Y
+	End
+	If getKey=1 and Y!=180
+		FillRectangle(X,Y,39,39
+		Y+50->Y
+	End
+End
+det(1
