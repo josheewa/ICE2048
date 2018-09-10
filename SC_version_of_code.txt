@@ -1,0 +1,60 @@
+[i]ICE2048
+Begin
+FillScreen(255
+Lbl WELCOME
+
+SetTextScale(2,2
+PrintStringXY("W[|e]l[|c]om[|e] [t]o ICE2048!",30,100
+SetTextScale(1,1
+PrintStringXY("E[n]joy yo|ur [s][t][|a]y h[|e]r[|e]...",30,140
+PrintStringXY("Press [enter] to continue...",50,230
+Pause 
+FillScreen(255
+Lbl TEXT
+PrintStringXY("ICE2048 [|b]y j[|c]g[t][|e]r777",9,2
+
+Lbl GRID
+SetColor(0
+Rectangle(9,19,212,212
+SetColor(214
+FillRectangle(10,20,210,210
+[i]I[n][|d]i|vi[|d]|u[|a]l [|b]lo[|c]k[s] [|b][|e]lo|w
+SetColor(182
+FillRectangle(20,30,40,40
+FillRectangle(70,30,40,40
+FillRectangle(120,30,40,40
+FillRectangle(170,30,40,40
+FillRectangle(20,80,40,40
+FillRectangle(70,80,40,40
+FillRectangle(120,80,40,40
+FillRectangle(170,80,40,40
+FillRectangle(20,130,40,40
+FillRectangle(70,130,40,40
+FillRectangle(120,130,40,40
+FillRectangle(170,130,40,40
+FillRectangle(20,180,40,40
+FillRectangle(70,180,40,40
+FillRectangle(120,180,40,40
+FillRectangle(170,180,40,40
+[i]Bor[|d][|e]r[s] for i[n][|d]i|vi[|d]|u[|a]l [|b]lo[|c]k[s]
+SetColor(0
+Rectangle(19,29,41,41
+Rectangle(69,29,41,41
+Rectangle(119,29,41,41
+Rectangle(169,29,41,41
+Rectangle(19,79,41,41
+Rectangle(69,79,41,41
+Rectangle(119,79,41,41
+Rectangle(169,79,41,41
+Rectangle(19,129,41,41
+Rectangle(69,129,41,41
+Rectangle(119,129,41,41
+Rectangle(169,129,41,41
+Rectangle(19,179,41,41
+Rectangle(69,179,41,41
+Rectangle(119,179,41,41
+Rectangle(169,179,41,41
+
+
+Pause 
+det(1
