@@ -1,2 +1,2 @@
 # ICE2048
-The classic 2048 written in ICE. 
+The classic math puzzle game 2048 ported to ICE for the CE. 
